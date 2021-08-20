@@ -7,7 +7,7 @@ module.exports = {
   },
   prompt: {
     messages: {
-      skip: '，输入【:skip】跳过',
+      skip: '可回车跳过',
       max: '最多%d个字符',
       min: '最少%d个字符',
       emptyWarning: '必填',
