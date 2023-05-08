@@ -7,13 +7,20 @@ Commitizen 是一个能帮助人们遵守提交信息约定的工具。
 
 ```bash
 # 安装
-yarn add commitizen
+npm install commitizen -g
 ```
 光安装这个，执行 git cz 和你执行 git commit 没有区别，还需要接着安装适配器。
    
 ```bash
 # 适配器
-npx commitizen init cz-conventional-changelog --yarn --dev --exact
+# npm
+commitizen init cz-conventional-changelog --save-dev --save-exact
+
+# yarn
+commitizen init cz-conventional-changelog --yarn --dev --exact
+
+# pnpm
+commitizen init cz-conventional-changelog --pnpm --save-dev --save-exact
 ```
 > 上面的命令做三件事：
 > 1. 安装 `cz-conventional-changelog` 适配器
